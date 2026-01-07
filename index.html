@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ry Vathana | Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0b0f14, #111827, #0f172a);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 1000px;
+      padding: 60px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .intro h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .intro h1 span { color: #00e6ff; }
+    .intro p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: #00e6ff;
+      color: #000;
+    }
+    .btn-primary:hover { background: #00c4d6; }
+    .btn-outline {
+      border: 2px solid #00e6ff;
+      color: #00e6ff;
+    }
+    .btn-outline:hover {
+      background: #00e6ff;
+      color: #000;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-card {
+      text-align: center;
+    }
+    .profile-card img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #00e6ff;
+      margin-bottom: 20px;
+    }
+    .profile-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .profile-card span {
+      font-size: 0.95rem;
+      color: #b0b0b0;
+    }
+    .platform {
+      padding: 14px 26px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .platform:hover {
+      background: #00e6ff;
+      color: #000;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+        text-align: center;
+      }
+      .intro h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+
+    <div class="profile">
+      <div class="profile-card">
+        <img src="C:\Users\ryvat\Documents\PERSONAL\ME\MY WEBSITE PORTFOLIO\My info web\vathana.png" alt="Profile Photo" />
+        <h3>Ry Vathana</h3>
+        <span>Artist</span>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h1>Hi, I'm <span>Ry Vathana</span></h1>
+      <p>
+        RY VATHANA is an independent music artist known for blending urban street energy with modern hip-hop influences. His music reflects real emotions, confidence, and lifestyle-driven storytelling, creating a sound that connects with both local and international audiences.
+        <br /><br />
+        Emerging from Southeast Asia, RY VATHANA has built a growing reputation through original releases such as <strong>“SUGAR MOMMY,” “WENDY CUT,”</strong> and <strong>“MOLIKA.”</strong> Each track showcases his ability to switch between hard-hitting rhythms, melodic flows, and catchy hooks, while maintaining a strong personal identity.
+        <br /><br />
+        Driven by authenticity and creative freedom, RY VATHANA represents a new generation of artists who fuse street culture, digital aesthetics, and global sounds. With consistent releases and a rising digital presence, he continues to expand his reach across streaming platforms, YouTube, and online communities.
+      </p>
+      <div class="buttons">
+        <a href="#works" class="btn-primary">View My Work</a>
+      </div>
+    </div>
+
+    <!-- Works Section -->
+    <div id="works" style="grid-column: 1 / -1; margin-top: 30px;">
+      <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: #00e6ff;">My Platforms</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <a href="https://www.youtube.com/@ryvathanaofficial" target="_blank" class="platform">YouTube</a>
+        <a href="https://www.tiktok.com/@ryvathana" target="_blank" class="platform">TikTok</a>
+        <a href="https://open.spotify.com/artist/179GUstIuFaJtapx9NrmgW?si=Y57fvU74SsO-Ef89cCGM_w" target="_blank" class="platform">Spotify</a>
+        <a href="https://music.apple.com/us/artist/ry-vathana/1841067404" target="_blank" class="platform">Apple Music</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
